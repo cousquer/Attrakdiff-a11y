@@ -8458,6 +8458,14 @@ abbr[data-title] {
 
 
   @media (min-width: 0px) { 
+	body {font-size : 100%;}
+		
+	h2 {
+		font-size: 185%;
+	}
+
+	legend {font-size: calc(1rem + .3vw);
+	}
 	abbr[data-title]:before {
 		
 		
@@ -8472,7 +8480,7 @@ abbr[data-title] {
 	  }
 	  abbr[data-title]:hover:before, abbr[data-title]:focus:before,label:focus-within abbr[data-title]:before {
 		
-		top: -545%;
+		top: -490%;
 		
 	  }
 	  abbr[data-title]:hover:after, abbr[data-title]:focus:after, label:focus-within abbr[data-title]:after {
@@ -8484,6 +8492,13 @@ abbr[data-title] {
 
   /* `sm` applies to x-small devices (portrait phones, less than 576px)*/
 @media (min-width: 475.98px) { 
+	body {font-size : 100%;}
+		
+	
+
+	legend {font-size: calc(1rem + .3vw);
+	}
+		
 	abbr[data-title]:before {
 		
 		
@@ -8511,9 +8526,17 @@ abbr[data-title] {
 
 /* `md` applies to small devices (landscape phones, less than 768px)*/
 @media (min-width: 767.98px) { 
+	body {font-size : 110%;}
+		
+	h2 {
+		font-size: 210%;
+	}
+
+	legend {font-size: calc(1.25rem + .3vw);
+	}
 	abbr[data-title]:before {
 		
-		top: -362%;
+		top: -260%;
 		right: auto;
 		bottom: auto;
 		left: 50%;
@@ -8525,7 +8548,7 @@ abbr[data-title] {
 	  }
 	  abbr[data-title]:hover:before, abbr[data-title]:focus:before,label:focus-within abbr[data-title]:before {
 		
-		top: -330%;
+		top: -260%;
 		
 	  }
 	  abbr[data-title]:hover:after, abbr[data-title]:focus:after, label:focus-within abbr[data-title]:after {
@@ -8551,7 +8574,7 @@ abbr[data-title] {
 	  }
 	  abbr[data-title]:hover:before, abbr[data-title]:focus:before,label:focus-within abbr[data-title]:before {
 		
-		top: -292%;
+		top: -260%;
 		
 	  }
 	  abbr[data-title]:hover:after, abbr[data-title]:focus:after, label:focus-within abbr[data-title]:after {
@@ -8577,7 +8600,7 @@ abbr[data-title] {
 	  }
 	  abbr[data-title]:hover:before, abbr[data-title]:focus:before,label:focus-within abbr[data-title]:before {
 		
-		top: -290%;
+		top: -260%;
 		
 	  }
 	  abbr[data-title]:hover:after, abbr[data-title]:focus:after, label:focus-within abbr[data-title]:after {
@@ -8603,7 +8626,7 @@ abbr[data-title] {
 	  }
 	  abbr[data-title]:hover:before, abbr[data-title]:focus:before,label:focus-within abbr[data-title]:before {
 		
-		top: -291%;
+		top: -260%;
 		
 	  }
 	  abbr[data-title]:hover:after, abbr[data-title]:focus:after, label:focus-within abbr[data-title]:after {
@@ -8628,7 +8651,7 @@ abbr[data-title] {
 	  }
 	  abbr[data-title]:hover:before, abbr[data-title]:focus:before,label:focus-within abbr[data-title]:before {
 		
-		top: -281%;
+		top: -261%;
 		
 	  }
 	  abbr[data-title]:hover:after, abbr[data-title]:focus:after, label:focus-within abbr[data-title]:after {

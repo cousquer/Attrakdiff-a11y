@@ -8365,3 +8365,303 @@ h5 {
 	outline: 3px dotted var(--ButtonText-inv) !important;
 }
   
+
+abbr[data-title] {
+	border-bottom: 3px dotted #0B1B34;
+	position: relative;
+	cursor: help;
+	letter-spacing: -0.1rem;
+	z-index: 3;
+  }
+  abbr[data-title]:before {
+	content: attr(data-title);
+	letter-spacing: 0.02rem;
+	background: #0B1B34;
+	border-radius: 2px;
+	color: #fff;
+	font-size: 14px;
+	position: absolute;
+	top: -100%;
+	right: auto;
+	bottom: auto;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0;
+	padding: 2px 6px;
+	transition: opacity 0.2s ease-in-out, top 0.3s ease-in-out;
+	/*white-space: nowrap;*/
+	min-height: 7rem;
+	min-width: 16rem;
+	z-index: 2;
+  }
+  abbr[data-title]:hover:before, abbr[data-title]:focus:before,label:focus-within abbr[data-title]:before {
+	opacity: 1;
+	top: -460%;
+	transition:  opacity 1s;
+  }
+  abbr[data-title]:hover:after, abbr[data-title]:focus:after, h2:focus-within abbr[data-title]:after {
+	content: "";
+	background: #0B1B34;
+	height: 20px;
+	opacity: 1;
+	position: absolute;
+	top: 6px;
+	right: auto;
+	bottom: auto;
+	left: 50%;
+	transform: rotate(45deg) translateX(-150%);
+	transition:  opacity 10s, top 2s;
+	transition-delay: 2s !important;
+	width: 20px;
+	z-index: 1;
+  }
+
+
+  .a42-ac-high-contrast abbr[data-title] {
+	border-bottom: 3px dotted black;
+
+  }
+  .a42-ac-high-contrast abbr[data-title]:before {
+
+	background: #343643;
+    border: 1px solid white;
+	color: #fff;
+
+  }
+
+  .a42-ac-high-contrast abbr[data-title]:hover:after, .a42-ac-high-contrast abbr[data-title]:focus:after, .a42-ac-high-contrast h2:focus-within abbr[data-title]:after {
+    border: 1px solid white;
+	background: #343643;
+	
+  }
+  .a42-ac-inv-contrast abbr[data-title] {
+	border-bottom: 3px dotted var(--ButtonText-inv);
+
+  }
+  .a42-ac-inv-contrast abbr[data-title]:before {
+
+	background: navy;
+	border: 1px solid yellow;
+
+	color:  yellow;
+
+  }
+
+  .a42-ac-inv-contrast abbr[data-title]:hover:after, .a42-ac-inv-contrast abbr[data-title]:focus:after, .a42-ac-inv-contrast h2:focus-within abbr[data-title]:after {
+	border: 1px solid yellow;
+	background: navy;
+	
+  }
+ 
+
+
+
+
+  @media (min-width: 0px) { 
+	abbr[data-title]:before {
+		
+		
+		right: auto;
+		bottom: auto;
+		left: 50%;
+		transform: translateX(-50%);
+		
+		min-height: 10.5rem;
+		min-width: 14rem;
+		
+	  }
+	  abbr[data-title]:hover:before, abbr[data-title]:focus:before,label:focus-within abbr[data-title]:before {
+		
+		top: -545%;
+		
+	  }
+	  abbr[data-title]:hover:after, abbr[data-title]:focus:after, label:focus-within abbr[data-title]:after {
+		
+		top: 6px;
+		
+	  }
+ }
+
+  /* `sm` applies to x-small devices (portrait phones, less than 576px)*/
+@media (min-width: 475.98px) { 
+	abbr[data-title]:before {
+		
+		
+		right: auto;
+		bottom: auto;
+		left: 50%;
+		transform: translateX(-50%);
+		
+		min-height: 10.5rem;
+		min-width: 14rem;
+		
+	  }
+	  abbr[data-title]:hover:before, abbr[data-title]:focus:before,label:focus-within abbr[data-title]:before {
+		
+		top: -485%;
+		
+	  }
+	  abbr[data-title]:hover:after, abbr[data-title]:focus:after, label:focus-within abbr[data-title]:after {
+		
+		top: 6px;
+		
+	  }
+	
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px)*/
+@media (min-width: 767.98px) { 
+	abbr[data-title]:before {
+		
+		top: -362%;
+		right: auto;
+		bottom: auto;
+		left: 50%;
+		transform: translateX(-50%);
+		
+		min-height: 7rem;
+		min-width: 22rem;
+		
+	  }
+	  abbr[data-title]:hover:before, abbr[data-title]:focus:before,label:focus-within abbr[data-title]:before {
+		
+		top: -330%;
+		
+	  }
+	  abbr[data-title]:hover:after, abbr[data-title]:focus:after, label:focus-within abbr[data-title]:after {
+		
+		top: 6px;
+		
+	  }
+ }
+
+/* `lg` applies to medium devices (tablets, less than 992px)*/
+@media (min-width: 991.98px) { 
+	abbr[data-title]:before {
+		
+		
+		right: auto;
+		bottom: auto;
+		left: 50%;
+		transform: translateX(-50%);
+		
+		min-height: 7rem;
+		min-width: 22rem;
+		
+	  }
+	  abbr[data-title]:hover:before, abbr[data-title]:focus:before,label:focus-within abbr[data-title]:before {
+		
+		top: -292%;
+		
+	  }
+	  abbr[data-title]:hover:after, abbr[data-title]:focus:after, label:focus-within abbr[data-title]:after {
+		
+		top: 6px;
+		
+	  }
+ }
+
+/* `xl` applies to large devices (desktops, less than 1200px)*/
+@media (min-width: 1199.98px) { 
+	abbr[data-title]:before {
+		
+		
+		right: auto;
+		bottom: auto;
+		left: 50%;
+		transform: translateX(-50%);
+		
+		min-height: 7rem;
+		min-width: 22rem;
+		
+	  }
+	  abbr[data-title]:hover:before, abbr[data-title]:focus:before,label:focus-within abbr[data-title]:before {
+		
+		top: -290%;
+		
+	  }
+	  abbr[data-title]:hover:after, abbr[data-title]:focus:after, label:focus-within abbr[data-title]:after {
+		
+		top: 6px;
+		
+	  }
+ }
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px)*/
+@media (min-width: 1399.98px) { 
+	abbr[data-title]:before {
+		
+		
+		right: auto;
+		bottom: auto;
+		left: 50%;
+		transform: translateX(-50%);
+		
+		min-height: 7rem;
+		min-width: 26rem;
+		
+	  }
+	  abbr[data-title]:hover:before, abbr[data-title]:focus:before,label:focus-within abbr[data-title]:before {
+		
+		top: -291%;
+		
+	  }
+	  abbr[data-title]:hover:after, abbr[data-title]:focus:after, label:focus-within abbr[data-title]:after {
+		
+		top: 6px;
+		
+	  }
+ }
+ /* `xxl` applies to x-large devices (large desktops, less than 1400px)*/
+@media (min-width: 1500px) { 
+	abbr[data-title]:before {
+		
+		
+		right: auto;
+		bottom: auto;
+		left: 50%;
+		transform: translateX(-50%);
+		
+		min-height: 7rem;
+		min-width: 26rem;
+		
+	  }
+	  abbr[data-title]:hover:before, abbr[data-title]:focus:before,label:focus-within abbr[data-title]:before {
+		
+		top: -281%;
+		
+	  }
+	  abbr[data-title]:hover:after, abbr[data-title]:focus:after, label:focus-within abbr[data-title]:after {
+		
+		top: 6px;
+		
+	  }
+ }
+ @media (min-width: 1900px) { 
+	abbr[data-title]:before {
+		
+		
+		right: auto;
+		bottom: auto;
+		left: 50%;
+		transform: translateX(-50%);
+		
+		min-height: 7rem;
+		min-width: 26rem;
+		
+	  }
+	  abbr[data-title]:hover:before, abbr[data-title]:focus:before,label:focus-within abbr[data-title]:before {
+		
+		top: -261%;
+		
+	  }
+	  abbr[data-title]:hover:after, abbr[data-title]:focus:after, label:focus-within abbr[data-title]:after {
+		
+		top: 6px;
+		
+	  }
+ }
+
+ #validate {
+	font-size: 130%;
+ }
